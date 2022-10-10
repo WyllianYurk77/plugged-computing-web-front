@@ -8,6 +8,7 @@ import { LevelSelectionComponent } from './components/level-selection/level-sele
 import { ScreenOneComponent } from './components/levels/one/screen-one/screen-one.component';
 import { ScreenTwoComponent } from './components/levels/one/screen-two/screen-two.component';
 import { ScreenThreeComponent } from './components/levels/one/screen-three/screen-three.component';
+import { ScreenFourComponent } from './components/levels/one/screen-four/screen-four.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ScreenThreeComponent } from './components/levels/one/screen-three/scree
     LevelSelectionComponent,
     ScreenOneComponent,
     ScreenTwoComponent,
-    ScreenThreeComponent
+    ScreenThreeComponent,
+    ScreenFourComponent
   ],
   imports: [
     BrowserModule,
