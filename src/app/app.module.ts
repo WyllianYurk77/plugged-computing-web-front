@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LevelSelectionComponent } from './components/level-selection/level-selection.component';
 import { ScreenOneComponent } from './components/levels/one/screen-one/screen-one.component';
 import { ScreenTwoComponent } from './components/levels/one/screen-two/screen-two.component';
+import { ScreenThreeComponent } from './components/levels/one/screen-three/screen-three.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ScreenTwoComponent } from './components/levels/one/screen-two/screen-tw
     HomeComponent,
     LevelSelectionComponent,
     ScreenOneComponent,
-    ScreenTwoComponent
+    ScreenTwoComponent,
+    ScreenThreeComponent
   ],
   imports: [
     BrowserModule,
