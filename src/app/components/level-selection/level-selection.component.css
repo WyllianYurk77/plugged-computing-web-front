@@ -8,8 +8,6 @@ body {
   text-align: center;
   font-size: 2em;
   margin-bottom: 1rem;
-  /* margin: 0;
-  padding: 0; */
 }
 
 .header {
@@ -17,7 +15,6 @@ body {
   height: 10%;
   color: #07377A;
   font-size: 3rem;
-  /* background-color: #90CCFF; */
 }
 
 .content {
@@ -83,7 +80,6 @@ p {
 
 .description :nth-child(2) {
   font-size: 1.5rem;
-  /* width: 205px; */
 }
 
 .bi {
