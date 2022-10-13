@@ -20,7 +20,7 @@
 
 h3 {
   color: #07377A;
-  margin-bottom: 2rem;
+  margin: 1rem 0 2rem 0;
 }
 
 p {
@@ -28,6 +28,7 @@ p {
   width: 25%;
   text-align: justify;
   margin-top: 2rem;
+  font-size: 1.2rem;
 }
 
 .bi {
