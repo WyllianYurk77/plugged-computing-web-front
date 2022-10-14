@@ -7,27 +7,133 @@
   <title>Fase 1</title>
 </head>
 <body>
-<div class="container">
-  <div><a routerLink="/fase-1-1"><i class="bi bi-chevron-left"></i></a></div>
-  <div class="content">
-    <h3><strong>FASE 1</strong></h3>
-    <p>Pressione os cartões para mostrar/ocultar seus pontos.</p>
-    <div class="card-group">
-      <div class="cards card-one"></div>
-      <div class="cards card-two"></div>
-      <div class="cards card-four"></div>
-      <div class="cards card-eight"></div>
-      <div class="cards card-sixteen"></div>
+  <div class="container">
+    <div><a routerLink="/fase-1-1"><i class="bi bi-chevron-left"></i></a></div>
+    <div class="content">
+      <h3><strong>FASE 1</strong></h3>
+      <p>Pressione os cartões para mostrar/ocultar seus pontos.</p>
+      <div class="card-group">
+        <div class="card-box">
+          <div class="cards card-sixteen">
+            <div class="card-flip" (click)="toggleFlip(16)" [@flipState]="flip16">
+              <div class="front show-back">
+                <div class="point-box-l">
+                  <div class="point"></div>
+                  <div class="point"></div>
+                  <div class="point"></div>
+                  <div class="point"></div>
+                </div>
+                <div class="point-box-l">
+                  <div class="point"></div>
+                  <div class="point"></div>
+                  <div class="point"></div>
+                  <div class="point"></div>
+                </div>
+                <div class="point-box-l">
+                  <div class="point"></div>
+                  <div class="point"></div>
+                  <div class="point"></div>
+                  <div class="point"></div>
+                </div>
+                <div class="point-box-l">
+                  <div class="point"></div>
+                  <div class="point"></div>
+                  <div class="point"></div>
+                  <div class="point"></div>
+                </div>
+              </div>
+              <div class="back">
+                <div class="card-back"><img src="../../../../../assets/cover/cp-card.png" alt="Flipped card"></div>
+              </div>
+            </div>
+          </div>
+          <span class="byn-number">{{byn16}}</span>
+        </div>
+        <div class="card-box">
+          <div class="cards card-eight">
+            <div class="card-flip" (click)="toggleFlip(8)" [@flipState]="flip8">
+              <div class="front show-front">
+                <div class="point-box">
+                  <div class="point"></div>
+                  <div class="point"></div>
+                </div>
+                <div class="point-box">
+                  <div class="point"></div>
+                  <div class="point"></div>
+                </div>
+                <div class="point-box">
+                  <div class="point"></div>
+                  <div class="point"></div>
+                </div>
+                <div class="point-box">
+                  <div class="point"></div>
+                  <div class="point"></div>
+                </div>
+              </div>
+              <div class="back">
+                <div class="card-back"><img src="../../../../../assets/cover/cp-card.png" alt="Flipped card"></div>
+              </div>
+            </div>
+          </div>
+          <span class="byn-number">{{byn8}}</span>
+        </div>
+        <div class="card-box">
+          <div class="cards card-four">
+            <div class="card-flip" (click)="toggleFlip(4)" [@flipState]="flip4">
+              <div class="front show-back">
+                <div class="point-box">
+                  <div class="point"></div>
+                  <div class="point"></div>
+                </div>
+                <div class="point-box">
+                  <div class="point"></div>
+                  <div class="point"></div>
+                </div>
+              </div>
+              <div class="back">
+                <div class="card-back"><img src="../../../../../assets/cover/cp-card.png" alt="Flipped card"></div>
+              </div>
+            </div>
+          </div>
+          <span class="byn-number">{{byn4}}</span>
+        </div>
+        <div class="card-box">
+          <div class="cards card-two">
+            <div class="card-flip" (click)="toggleFlip(2)" [@flipState]="flip2">
+              <div class="front">
+                <div class="point"></div>
+                <div class="point"></div>
+              </div>
+              <div class="back">
+                <div class="card-back"><img src="../../../../../assets/cover/cp-card.png" alt="Flipped card"></div>
+              </div>
+            </div>
+          </div>
+          <span class="byn-number">{{byn2}}</span>
+        </div>
+        <div class="card-box">
+          <div class="cards card-one">
+            <div class="card-flip" (click)="toggleFlip(1)" [@flipState]="flip1">
+              <div class="front">
+                <div class="point"></div>
+              </div>
+              <div class="back">
+                <div class="card-back"><img src="../../../../../assets/cover/cp-card.png" alt="Flipped card"></div>
+              </div>
+            </div>
+          </div>
+          <span class="byn-number">{{byn1}}</span>
+        </div>
+      </div>
+      <p [innerHTML]="question"></p>
+      <table class="answer-table">
+        <caption></caption>
+        <th></th>
+        <tr *ngFor="let answer of answers">
+          <td><button type="button" class="btn btn-primary" (click)="changeAnswers(answer)">{{answer}}</button></td>
+        </tr>
+      </table>
     </div>
-    <p [innerHTML]="question"></p>
-    <table class="answer-table">
-      <caption></caption>
-      <tr *ngFor="let answer of answers">
-        <td><button type="button" class="btn btn-primary" (click)="changeAnswers(answer)">{{answer}}</button></td>
-      </tr>
-    </table>
   </div>
-  <!-- <div><a href=""><i class="bi bi-chevron-right"></i></a></div> -->
-</div>
 </body>
 </html>
