@@ -19,12 +19,12 @@
 }
 
 h3 {
-  color: #07377A;
+  color: var(--dark-blue);
   margin: 1rem 0 2rem 0;
 }
 
 p {
-  color: #07377A;
+  color: var(--dark-blue);
   width: 25%;
   height: 300px;
   text-align: justify;
@@ -33,6 +33,6 @@ p {
 }
 
 .bi {
-  color: #07377A;
+  color: var(--dark-blue);
   font-size: 3rem;
 }

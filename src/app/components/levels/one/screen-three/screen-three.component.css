@@ -1,5 +1,5 @@
 body {
-  background-color: #90CCFF;
+  background-color: var(--light-blue);
 }
 
 .container {
@@ -23,12 +23,12 @@ body {
 }
 
 h3 {
-  color: #07377A;
+  color: var(--dark-blue);
   margin: 1rem 0;
 }
 
 p {
-  color: #07377A;
+  color: var(--dark-blue);
   width: 45%;
   text-align: center;
   margin-top: 1rem;
@@ -37,14 +37,14 @@ p {
 }
 
 .bi {
-  color: #07377A;
+  color: var(--dark-blue);
   font-size: 3rem;
 }
 
 .btn {
   width: 400px;
   height: 40px;
-  background-color: #07377A;
+  background-color: var(--dark-blue);
   margin-top: 0.5rem;
   font-size: 1.2rem;
   padding: 0;
@@ -57,7 +57,7 @@ p {
 }
 
 .cards {
-  border: 4px solid #07377A;
+  border: 4px solid var(--dark-blue);
   border-radius: 4px;
   background-color: #fff;
   width: 80px;
@@ -98,7 +98,7 @@ p {
 }
 
 .front {
-  border: 3px solid #90CCFF;
+  border: 3px solid var(--light-blue);
   border-radius: 4px;
   -webkit-transform : rotateY(0deg);
   -ms-transform     : rotateY(0deg);
