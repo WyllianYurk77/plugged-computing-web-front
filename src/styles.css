@@ -1,4 +1,5 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 
 html {
   height: 100vh;
@@ -7,7 +8,7 @@ html {
 }
 
 body {
-  /* background-color: initial; */
+  font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   margin: 0;
 }
