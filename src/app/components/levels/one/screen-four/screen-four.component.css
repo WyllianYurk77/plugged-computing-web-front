@@ -25,12 +25,12 @@ body {
 
 h2,h3 {
   color: #07377A;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 p {
   color: #07377A;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .nav-buttons {
