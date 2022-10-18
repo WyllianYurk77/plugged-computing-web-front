@@ -15,7 +15,7 @@
 }
 
 .container div img {
-  width: 25%;
+  width: 30%;
 }
 
 h3 {
@@ -25,7 +25,7 @@ h3 {
 
 p {
   color: var(--dark-blue);
-  width: 25%;
+  width: 35%;
   height: 300px;
   text-align: justify;
   margin-top: 2rem;
@@ -35,4 +35,43 @@ p {
 .bi {
   color: var(--dark-blue);
   font-size: 3rem;
+}
+
+@media(max-width: 991px) {
+  .container div img {
+    width: 35%;
+  }
+  p {
+    width: 40%;
+    font-size: 1.2rem;
+  }
+  .bi {
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 767px) {
+  .container div img {
+    width: 60%;
+  }
+  p {
+    width: 60%;
+    font-size: 1rem;
+  }
+  .bi {
+    font-size: 1.8rem;
+  }
+}
+
+@media(max-width: 484px) {
+  .container div img {
+    width: 60%;
+  }
+  p {
+    width: 70%;
+    font-size: 0.8rem;
+  }
+  .bi {
+    font-size: 1.5rem;
+  }
 }
