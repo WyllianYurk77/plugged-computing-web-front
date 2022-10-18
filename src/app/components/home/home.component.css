@@ -43,3 +43,44 @@ h3 {
   font-weight: bold;
   padding: 0;
 }
+
+@media(max-width: 1600px) {
+  .container div img {
+    margin-top: 6rem;
+    width: 50%;
+  }
+}
+
+@media(max-width: 1198px) {
+  .container div img {
+    margin-top: 6rem;
+    width: 70%;
+  }
+}
+
+@media(max-width: 994px) {
+  .container div img {
+    margin-top: 6rem;
+    width: 70%;
+  }
+}
+
+@media(max-width: 777px) {
+
+  .container div img {
+    margin-top: 6rem;
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 300px;
+    font-size: 1.2rem;
+  }
+}
