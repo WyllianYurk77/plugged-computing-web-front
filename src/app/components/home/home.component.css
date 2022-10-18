@@ -44,7 +44,7 @@ h3 {
   padding: 0;
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 1320px) {
   .container div img {
     margin-top: 6rem;
     width: 50%;
