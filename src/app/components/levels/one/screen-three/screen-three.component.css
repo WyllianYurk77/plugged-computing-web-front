@@ -163,12 +163,16 @@ margin-top: 0.8rem;
   color: var(--dark-blue);
 }
 
-@media(min-height: 768px) {
+@media(min-height: 767px) {
+
   .bi {
     font-size: 1.5rem;
   }
+  .card-group {
+    width: 20px;
+  }
   .cards {
-    width: 70px;
+    width: 20px;
     height: 110px;
   }
 

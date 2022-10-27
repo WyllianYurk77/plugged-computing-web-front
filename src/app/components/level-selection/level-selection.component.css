@@ -55,7 +55,7 @@ body {
   justify-content: center;
   color: var(--dark-blue);
   align-items: center;
-  gap: 12%;
+  gap: 8%;
   text-decoration: none;
   text-align: start;
 }
@@ -66,7 +66,7 @@ body {
 }
 
 .description {
-  width: 200px;
+  width: 300px;
   margin: 0;
 }
 
@@ -86,14 +86,45 @@ p {
   font-size: 2rem;
 }
 
-@media(max-width: 770px) {
-  .level a img {
-    width: 30%;
+@media(max-width: 992px) {
+  .header {
+    font-size: 2rem;
   }
-  .description {
-    width: 100px;
+  .level a {
+    gap: 6%;
+  }
+  .level a img {
+    width: 25%;
   }
   .level {
     width: 90%;
+    height: 40%;
+  }
+}
+
+@media(max-width: 770px) {
+  .header {
+    font-size: 2rem;
+  }
+  .level a {
+    gap: 6%;
+  }
+  .level a img {
+    width: 30%;
+  }
+  .level {
+    width: 90%;
+    height: 40%;
+  }
+  .description :first-child {
+    font-size: 1.5rem;
+  }
+
+  .description :nth-child(2) {
+    font-size: 1rem;
+  }
+
+  p {
+    margin: 0;
   }
 }
