@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ScreenTwoComponent } from './screen-two.component';
+import { ScreenTwoLevelOneComponent } from './screen-two-level-one.component';
 
 describe('ScreenTwoComponent', () => {
-  let component: ScreenTwoComponent;
-  let fixture: ComponentFixture<ScreenTwoComponent>;
+  let component: ScreenTwoLevelOneComponent;
+  let fixture: ComponentFixture<ScreenTwoLevelOneComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ScreenTwoComponent ]
+      declarations: [ ScreenTwoLevelOneComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ScreenTwoComponent);
+    fixture = TestBed.createComponent(ScreenTwoLevelOneComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

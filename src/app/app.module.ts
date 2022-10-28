@@ -1,28 +1,30 @@
+import { ScreenOneLevelTwoComponent } from './components/levels/two/screen-one-level-two/screen-one-level-two.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { LevelSelectionComponent } from './components/level-selection/level-selection.component';
-import { ScreenOneComponent } from './components/levels/one/screen-one/screen-one.component';
-import { ScreenTwoComponent } from './components/levels/one/screen-two/screen-two.component';
-import { ScreenThreeComponent } from './components/levels/one/screen-three/screen-three.component';
-import { ScreenFourComponent } from './components/levels/one/screen-four/screen-four.component';
+import { ScreenFourLevelOneComponent } from './components/levels/one/screen-four-level-one/screen-four-level-one.component';
+import { ScreenOneLevelOneComponent } from './components/levels/one/screen-one-level-one/screen-one-level-one.component';
+import { ScreenThreeLevelOneComponent } from './components/levels/one/screen-three-level-one/screen-three-level-one.component';
+import { ScreenTwoLevelOneComponent } from './components/levels/one/screen-two-level-one/screen-two-level-one.component';
 import { ToastContainer } from './components/levels/toast-container.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LevelSelectionComponent,
-    ScreenOneComponent,
-    ScreenTwoComponent,
-    ScreenThreeComponent,
-    ScreenFourComponent,
-    ToastContainer
+    ScreenOneLevelOneComponent,
+    ScreenTwoLevelOneComponent,
+    ScreenThreeLevelOneComponent,
+    ScreenFourLevelOneComponent,
+    ToastContainer,
+    ScreenOneLevelTwoComponent
   ],
   imports: [
     BrowserModule,
