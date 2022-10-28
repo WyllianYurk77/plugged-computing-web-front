@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ScreenOneComponent } from './screen-one.component';
+import { ScreenOneLevelOneComponent } from './screen-one-level-one.component';
 
 describe('ScreenOneComponent', () => {
-  let component: ScreenOneComponent;
-  let fixture: ComponentFixture<ScreenOneComponent>;
+  let component: ScreenOneLevelOneComponent;
+  let fixture: ComponentFixture<ScreenOneLevelOneComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ScreenOneComponent ]
+      declarations: [ ScreenOneLevelOneComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ScreenOneComponent);
+    fixture = TestBed.createComponent(ScreenOneLevelOneComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

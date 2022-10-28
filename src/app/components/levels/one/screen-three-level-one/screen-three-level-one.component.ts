@@ -1,12 +1,12 @@
-import { ToastService } from './../../toast.service';
+import { ToastService } from '../../toast.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
-  selector: 'app-screen-three',
-  templateUrl: './screen-three.component.html',
-  styleUrls: ['./screen-three.component.css'],
+  selector: 'app-screen-three-level-one',
+  templateUrl: './screen-three-level-one.component.html',
+  styleUrls: ['./screen-three-level-one.component.css'],
   animations: [
     trigger('flipState', [
       state(
@@ -26,7 +26,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     ]),
   ]
 })
-export class ScreenThreeComponent implements OnInit {
+export class ScreenThreeLevelOneComponent implements OnInit {
 
   flip1: string = 'inactive';
   flip2: string = 'active';
