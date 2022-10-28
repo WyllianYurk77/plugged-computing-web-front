@@ -129,11 +129,21 @@
       <table class="answer-table">
         <caption></caption>
         <th></th>
-        <tr *ngFor="let answer of answers">
-          <td><button type="button" class="btn btn-primary" (click)="changeAnswers(answer)">{{answer}}</button></td>
+        <tr>
+          <td><button type="button" class="btn btn-primary" [ngClass]="[btnClass1]" (click)="changeAnswers(answers[0], 1)" (click)="pickAnswer(answers[0])">{{answers[0]}}</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-primary" [ngClass]="[btnClass2]" (click)="changeAnswers(answers[1], 2)" (click)="pickAnswer(answers[1])">{{answers[1]}}</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-primary" [ngClass]="[btnClass3]" (click)="changeAnswers(answers[2], 3)" (click)="pickAnswer(answers[2])">{{answers[2]}}</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-primary" [ngClass]="[btnClass4]" (click)="changeAnswers(answers[3], 4)" (click)="pickAnswer(answers[3])">{{answers[3]}}</button></td>
         </tr>
       </table>
     </div>
   </div>
+  <app-toast aria-live="polite" aria-atomic="true" ></app-toast>
 </body>
 </html>
