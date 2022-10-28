@@ -1,3 +1,4 @@
+import { ToastService } from './../../toast.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { trigger, state, style, transition, animate } from '@angular/animations';
@@ -39,11 +40,18 @@ export class ScreenThreeComponent implements OnInit {
   byn8: number = 1;
   byn16: number = 0;
 
+  btnClass1: string = "";
+  btnClass2: string = "";
+  btnClass3: string = "";
+  btnClass4: string = "";
+
+  attempts: number = 0;
+
   question: string = "O que você percebeu sobre o número de pontos nos cartões?";
 
   answers: string[] = ["Possuem metade do valor anterior", "São valores aleatórios", "São a soma do próximo com o anterior", "Estão em ordem crescente"];
 
-  constructor(private router: Router) {
+  constructor(private router: Router, public toastService: ToastService) {
 
   }
 
@@ -51,7 +59,7 @@ export class ScreenThreeComponent implements OnInit {
     this.answers.sort(() => Math.random() - 0.5);
   }
 
-  toggleFlip(card:number): void {
+  toggleFlip(card: number): void {
     if(card == 1) {
       this.flip1 = (this.flip1 == 'inactive') ? 'active' : 'inactive';
     } else if(card == 2) {
@@ -66,19 +74,29 @@ export class ScreenThreeComponent implements OnInit {
     this.toggleBynaries();
   }
 
-  changeAnswers(value: string) {
+  changeAnswers(value: string, btn: number): void {
     if(value === "Possuem metade do valor anterior") {
-      this.answers = ["24", "20", "32", "18"];
-      this.question = "Quantos pontos teria o próximo cartão à esquerda?";
+      this.buttonClass(btn, true);
+      setTimeout(() => {
+        this.answers = ["24", "20", "32", "18"];
+        this.question = "Quantos pontos teria o próximo cartão à esquerda?";
+        this.answers.sort(() => Math.random() - 0.5);
+      },1000);
+    } else if(value === "32") {
+        this.buttonClass(btn, true);
+        setTimeout(() => {
+          this.answers = ["01101", "10001", "10011", "01001"];
+          this.question = "Como seria o número 17 em binário? <br> Dica: veja os números abaixo dos cartões.";
+          this.answers.sort(() => Math.random() - 0.5);
+        },1000);
+    } else if(value === "10001") {
+        this.buttonClass(btn, true);
+        setTimeout(() => {
+          this.router.navigate(['fase-1-4']);
+        },1000);
+    } else {
+        this.buttonClass(btn, false);
     }
-    if(value === "32") {
-      this.answers = ["01101", "10001", "10011", "01001"];
-      this.question = "Como seria o número 17 em binário? <br> Dica: veja os números abaixo dos cartões.";
-    }
-    if(value === "10001") {
-      this.router.navigate(['fase-1-4']);
-    }
-    this.answers.sort(() => Math.random() - 0.5);
   }
 
   toggleBynaries():void {
@@ -111,6 +129,34 @@ export class ScreenThreeComponent implements OnInit {
     } else {
       setTimeout(()=> {this.byn16 = 1;},400);
     }
+  }
+
+  pickAnswer(answer: string): void {
+    if(answer !== "Possuem metade do valor anterior" && answer !== "32" && answer !== "10001") {
+      this.toastService.show('Tente outra vez.');
+      this.attempts += 1;
+      console.log(this.attempts);
+    }
+  }
+
+  buttonClass(button: number, status: boolean): void {
+    if(button == 1) {
+      this.btnClass1 = status ? "correct" : "incorrect";
+      setTimeout(() => {this.btnClass1 = "";},1000);
+    }
+    if(button == 2) {
+      this.btnClass2 = status ? "correct" : "incorrect";
+      setTimeout(() => {this.btnClass2 = "";},1000);
+    }
+    if(button == 3) {
+      this.btnClass3 = status ? "correct" : "incorrect";
+      setTimeout(() => {this.btnClass3 = "";},1000);
+    }
+    if(button == 4) {
+      this.btnClass4 = status ? "correct" : "incorrect";
+      setTimeout(() => {this.btnClass4 = "";},1000);
+    }
+
   }
 
 }

@@ -10,6 +10,8 @@ import { ScreenOneComponent } from './components/levels/one/screen-one/screen-on
 import { ScreenTwoComponent } from './components/levels/one/screen-two/screen-two.component';
 import { ScreenThreeComponent } from './components/levels/one/screen-three/screen-three.component';
 import { ScreenFourComponent } from './components/levels/one/screen-four/screen-four.component';
+import { ToastContainer } from './components/levels/toast-container.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { ScreenFourComponent } from './components/levels/one/screen-four/screen-
     ScreenOneComponent,
     ScreenTwoComponent,
     ScreenThreeComponent,
-    ScreenFourComponent
+    ScreenFourComponent,
+    ToastContainer
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

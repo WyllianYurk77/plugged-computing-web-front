@@ -163,6 +163,22 @@ margin-top: 0.8rem;
   color: var(--dark-blue);
 }
 
+.correct {
+  background-color: var(--answer-green);
+}
+
+.correct:hover {
+  background-color: var(--answer-green);
+}
+
+.incorrect {
+  background-color: var(--answer-red);
+}
+
+.incorrect:hover {
+  background-color: var(--answer-red);
+}
+
 @media(min-height: 767px) {
 
   .bi {
