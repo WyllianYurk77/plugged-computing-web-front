@@ -60,7 +60,8 @@ p {
   border: 4px solid var(--dark-blue);
   border-radius: 4px;
   background-color: #fff;
-  width: 80px;
+  /* max-width: 80px; */
+  min-width: 80px;
   height: 120px;
   margin: 0 8px;
   padding: 0;
@@ -130,8 +131,8 @@ p {
 .point {
   background-color: var(--dark-blue);
   border-radius: 50%;
-  width: 12px;
-  height: 12px;
+  min-width: 0.8vw;
+  min-height: 0.8vw;
 }
 
 .card-back {
