@@ -31,7 +31,7 @@ p {
   color: var(--dark-blue);
   width: 45%;
   text-align: center;
-  margin-top: 1rem;
+  margin: 1rem;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -54,6 +54,10 @@ p {
   padding-inline:  10px;
   padding-block: 10px;
   border-radius: 4px !important;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+  background-color: var(--dark-blue);
 }
 
 .card-group {
@@ -168,7 +172,7 @@ p {
   background-color: var(--answer-green);
 }
 
-.correct:hover {
+.correct:hover, .correct:focus {
   background-color: var(--answer-green);
 }
 
@@ -176,7 +180,7 @@ p {
   background-color: var(--answer-red);
 }
 
-.incorrect:hover {
+.incorrect:hover, .incorrect:focus {
   background-color: var(--answer-red);
 }
 
