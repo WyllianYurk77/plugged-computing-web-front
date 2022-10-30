@@ -1,9 +1,8 @@
-import { ScreenOneLevelTwoComponent } from './components/levels/two/screen-one-level-two/screen-one-level-two.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -13,6 +12,8 @@ import { ScreenOneLevelOneComponent } from './components/levels/one/screen-one-l
 import { ScreenThreeLevelOneComponent } from './components/levels/one/screen-three-level-one/screen-three-level-one.component';
 import { ScreenTwoLevelOneComponent } from './components/levels/one/screen-two-level-one/screen-two-level-one.component';
 import { ToastContainer } from './components/levels/toast-container.component';
+import { ScreenOneLevelTwoComponent } from './components/levels/two/screen-one-level-two/screen-one-level-two.component';
+import { ScreenTwoLevelTwoComponent } from './components/levels/two/screen-two-level-two/screen-two-level-two.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ToastContainer } from './components/levels/toast-container.component';
     ScreenThreeLevelOneComponent,
     ScreenFourLevelOneComponent,
     ToastContainer,
-    ScreenOneLevelTwoComponent
+    ScreenOneLevelTwoComponent,
+    ScreenTwoLevelTwoComponent
   ],
   imports: [
     BrowserModule,
