@@ -11,7 +11,7 @@
     <div><a routerLink="/fase-1-2"><i class="bi bi-chevron-left"></i></a></div>
     <div class="content">
       <h3><strong>FASE 1</strong></h3>
-      <p>Pressione os cartões para mostrar/ocultar seus pontos.</p>
+      <p class="w-75">Pressione os cartões para mostrar/ocultar seus pontos.</p>
       <div class="card-group">
         <div class="card-box">
           <div class="cards card-sixteen">
@@ -125,23 +125,16 @@
           <span class="byn-number">{{byn1}}</span>
         </div>
       </div>
-      <p [innerHTML]="question"></p>
-      <table class="answer-table">
-        <caption></caption>
-        <th></th>
-        <tr>
-          <td><button type="button" class="btn btn-primary" [ngClass]="[btnClass1]" (click)="changeAnswers(answers[0], 1)" (click)="pickAnswer(answers[0])">{{answers[0]}}</button></td>
-        </tr>
-        <tr>
-          <td><button type="button" class="btn btn-primary" [ngClass]="[btnClass2]" (click)="changeAnswers(answers[1], 2)" (click)="pickAnswer(answers[1])">{{answers[1]}}</button></td>
-        </tr>
-        <tr>
-          <td><button type="button" class="btn btn-primary" [ngClass]="[btnClass3]" (click)="changeAnswers(answers[2], 3)" (click)="pickAnswer(answers[2])">{{answers[2]}}</button></td>
-        </tr>
-        <tr>
-          <td><button type="button" class="btn btn-primary" [ngClass]="[btnClass4]" (click)="changeAnswers(answers[3], 4)" (click)="pickAnswer(answers[3])">{{answers[3]}}</button></td>
-        </tr>
-      </table>
+      <p class="w-75" [innerHTML]="question"></p>
+      <div class="answer-table row justify-content-center w-100">
+        <button type="button" class="btn btn-primary col-md-5 col-sm-3 btn-block" [ngClass]="[btnClass1]" (click)="changeAnswers(answers[0], 1)" (click)="pickAnswer(answers[0])">{{answers[0]}}</button>
+        <div class="w-100"></div>
+        <button type="button" class="btn btn-primary col-md-5 col-sm-3 btn-block" [ngClass]="[btnClass2]" (click)="changeAnswers(answers[1], 2)" (click)="pickAnswer(answers[1])">{{answers[1]}}</button>
+        <div class="w-100"></div>
+        <button type="button" class="btn btn-primary col-md-5 col-sm-3 btn-block" [ngClass]="[btnClass3]" (click)="changeAnswers(answers[2], 3)" (click)="pickAnswer(answers[2])">{{answers[2]}}</button>
+        <div class="w-100"></div>
+        <button type="button" class="btn btn-primary col-md-5 col-sm-3 btn-block" [ngClass]="[btnClass4]" (click)="changeAnswers(answers[3], 4)" (click)="pickAnswer(answers[3])">{{answers[3]}}</button>
+      </div>
     </div>
   </div>
   <app-toast aria-live="polite" aria-atomic="true" ></app-toast>
