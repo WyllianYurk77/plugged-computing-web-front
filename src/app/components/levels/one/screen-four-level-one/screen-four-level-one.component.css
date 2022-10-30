@@ -26,6 +26,10 @@ body {
   padding: 10px;
 }
 
+h3 {
+  margin-top: 4rem !important;
+}
+
 h2,h3 {
   color: var(--dark-blue);
   margin: 1rem;
