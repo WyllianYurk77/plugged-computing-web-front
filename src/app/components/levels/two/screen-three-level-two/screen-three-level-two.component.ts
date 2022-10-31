@@ -115,7 +115,7 @@ export class ScreenThreeLevelTwoComponent implements OnInit {
       },1000);
     } else {
       this.buttonClass(btn, false);
-  }
+    }
   }
 
   toggleBynaries():void {
@@ -180,9 +180,5 @@ export class ScreenThreeLevelTwoComponent implements OnInit {
       setTimeout(() => {this.btnClass5 = "";},1000);
     }
   }
-
-  // get answerValue() { return this.answer.get('text').value; }
-
-  // set answerValue(value: any) { this.answerValue = value; }
 
 }
