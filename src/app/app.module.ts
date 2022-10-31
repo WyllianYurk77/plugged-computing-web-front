@@ -18,6 +18,7 @@ import { ScreenTwoLevelTwoComponent } from './components/levels/two/screen-two-l
 import { ScreenThreeLevelTwoComponent } from './components/levels/two/screen-three-level-two/screen-three-level-two.component';
 import { ScreenFourLevelTwoComponent } from './components/levels/two/screen-four-level-two/screen-four-level-two.component';
 import { ScreenOneLevelThreeComponent } from './components/levels/three/screen-one-level-three/screen-one-level-three.component';
+import { ScreenTwoLevelThreeComponent } from './components/levels/three/screen-two-level-three/screen-two-level-three.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ScreenOneLevelThreeComponent } from './components/levels/three/screen-o
     ScreenTwoLevelTwoComponent,
     ScreenThreeLevelTwoComponent,
     ScreenFourLevelTwoComponent,
-    ScreenOneLevelThreeComponent
+    ScreenOneLevelThreeComponent,
+    ScreenTwoLevelThreeComponent
   ],
   imports: [
     BrowserModule,
