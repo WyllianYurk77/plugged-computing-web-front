@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { ScreenTwoLevelOneComponent } from './components/levels/one/screen-two-l
 import { ToastContainer } from './components/levels/toast-container.component';
 import { ScreenOneLevelTwoComponent } from './components/levels/two/screen-one-level-two/screen-one-level-two.component';
 import { ScreenTwoLevelTwoComponent } from './components/levels/two/screen-two-level-two/screen-two-level-two.component';
+import { ScreenThreeLevelTwoComponent } from './components/levels/two/screen-three-level-two/screen-three-level-two.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,16 @@ import { ScreenTwoLevelTwoComponent } from './components/levels/two/screen-two-l
     ScreenFourLevelOneComponent,
     ToastContainer,
     ScreenOneLevelTwoComponent,
-    ScreenTwoLevelTwoComponent
+    ScreenTwoLevelTwoComponent,
+    ScreenThreeLevelTwoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
