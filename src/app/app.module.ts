@@ -16,6 +16,7 @@ import { ToastContainer } from './components/levels/toast-container.component';
 import { ScreenOneLevelTwoComponent } from './components/levels/two/screen-one-level-two/screen-one-level-two.component';
 import { ScreenTwoLevelTwoComponent } from './components/levels/two/screen-two-level-two/screen-two-level-two.component';
 import { ScreenThreeLevelTwoComponent } from './components/levels/two/screen-three-level-two/screen-three-level-two.component';
+import { ScreenFourLevelTwoComponent } from './components/levels/two/screen-four-level-two/screen-four-level-two.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ScreenThreeLevelTwoComponent } from './components/levels/two/screen-thr
     ToastContainer,
     ScreenOneLevelTwoComponent,
     ScreenTwoLevelTwoComponent,
-    ScreenThreeLevelTwoComponent
+    ScreenThreeLevelTwoComponent,
+    ScreenFourLevelTwoComponent
   ],
   imports: [
     BrowserModule,
