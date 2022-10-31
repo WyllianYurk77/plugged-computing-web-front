@@ -58,6 +58,42 @@ export class ScreenThreeLevelThreeComponent implements OnInit {
     } else if(value === "11" && this.imageRef === 4) {
         this.buttonClass(true);
         setTimeout(() => {
+          this.createForm();
+          this.imageRef = 5;
+        },1000);
+    } else if(value === "0" && this.imageRef === 5) {
+        this.buttonClass(true);
+        setTimeout(() => {
+          this.createForm();
+          this.imageRef = 6;
+        },1000);
+    } else if(value === "17" && this.imageRef === 6) {
+        this.buttonClass(true);
+        setTimeout(() => {
+          this.createForm();
+          this.imageRef = 7;
+        },1000);
+    } else if(value === "2" && this.imageRef === 7) {
+        this.buttonClass(true);
+        setTimeout(() => {
+          this.createForm();
+          this.imageRef = 8;
+        },1000);
+    } else if(value === "0" && this.imageRef === 8) {
+        this.buttonClass(true);
+        setTimeout(() => {
+          this.createForm();
+          this.imageRef = 9;
+        },1000);
+    } else if(value === "20" && this.imageRef === 9) {
+        this.buttonClass(true);
+        setTimeout(() => {
+          this.createForm();
+          this.imageRef = 10;
+        },1000);
+    } else if(value === "31" && this.imageRef === 10) {
+        this.buttonClass(true);
+        setTimeout(() => {
           this.router.navigate(['fase-3-4']);
         },1000);
     } else {
