@@ -128,8 +128,7 @@ export class ScreenThreeLevelFourComponent implements OnInit {
           this.createForm();
           this.imageRef = 16;
         },1000);
-    }
-    else if(value.toLowerCase() === "ajude estou preso" && this.imageRef === 16) {
+    } else if(value.toLowerCase() === "ajude estou preso" && this.imageRef === 16) {
         this.buttonClass(true);
         setTimeout(() => {
           this.router.navigate(['fase-4-4']);

@@ -20,6 +20,7 @@ import { ScreenTwoLevelTwoComponent } from './components/levels/two/screen-two-l
 import { ScreenTwoLevelFourComponent } from './components/levels/four/screen-two-level-four/screen-two-level-four.component';
 import { ScreenOneLevelFiveComponent } from './components/levels/five/screen-one-level-five/screen-one-level-five.component';
 import { ScreenTwoLevelFiveComponent } from './components/levels/five/screen-two-level-five/screen-two-level-five.component';
+import { ScreenThreeLevelFiveComponent } from './components/levels/five/screen-three-level-five/screen-three-level-five.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', component: HomeComponent},
@@ -41,7 +42,8 @@ const routes: Routes = [
   {path: 'fase-4-3', component: ScreenThreeLevelFourComponent},
   {path: 'fase-4-4', component: ScreenFourLevelFourComponent},
   {path: 'fase-5-1', component: ScreenOneLevelFiveComponent},
-  {path: 'fase-5-2', component: ScreenTwoLevelFiveComponent}
+  {path: 'fase-5-2', component: ScreenTwoLevelFiveComponent},
+  {path: 'fase-5-3', component: ScreenThreeLevelFiveComponent}
 ];
 
 @NgModule({
