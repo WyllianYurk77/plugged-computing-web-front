@@ -25,6 +25,10 @@ import { ScreenOneLevelFourComponent } from './components/levels/four/screen-one
 import { ScreenTwoLevelFourComponent } from './components/levels/four/screen-two-level-four/screen-two-level-four.component';
 import { ScreenThreeLevelFourComponent } from './components/levels/four/screen-three-level-four/screen-three-level-four.component';
 import { ScreenFourLevelFourComponent } from './components/levels/four/screen-four-level-four/screen-four-level-four.component';
+import { ScreenOneLevelFiveComponent } from './components/levels/five/screen-one-level-five/screen-one-level-five.component';
+import { ScreenTwoLevelFiveComponent } from './components/levels/five/screen-two-level-five/screen-two-level-five.component';
+import { ScreenThreeLevelFiveComponent } from './components/levels/five/screen-three-level-five/screen-three-level-five.component';
+import { ScreenFourLevelFiveComponent } from './components/levels/five/screen-four-level-five/screen-four-level-five.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +51,11 @@ import { ScreenFourLevelFourComponent } from './components/levels/four/screen-fo
     ScreenOneLevelFourComponent,
     ScreenTwoLevelFourComponent,
     ScreenThreeLevelFourComponent,
-    ScreenFourLevelFourComponent
+    ScreenFourLevelFourComponent,
+    ScreenOneLevelFiveComponent,
+    ScreenTwoLevelFiveComponent,
+    ScreenThreeLevelFiveComponent,
+    ScreenFourLevelFiveComponent
   ],
   imports: [
     BrowserModule,
