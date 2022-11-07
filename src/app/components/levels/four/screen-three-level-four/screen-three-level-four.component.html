@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fase 4</title>
+</head>
+<body>
+  <div class="container">
+    <div><a routerLink="/fase-4-2"><i class="bi bi-chevron-left"></i></a></div>
+    <div class="content">
+      <h3><strong>FASE 4</strong></h3>
+
+      <img src="assets/level4/l4q1.png" alt="Referência fase 4" *ngIf="imageRef == 1">
+      <img src="assets/level4/l4q2.png" alt="Referência fase 4" *ngIf="imageRef == 2">
+      <img src="assets/level4/l4q3-10.png" alt="Referência fase 4" *ngIf="imageRef == 3 || imageRef == 10">
+      <img src="assets/level4/l4q4.png" alt="Referência fase 4" *ngIf="imageRef == 4">
+      <img src="assets/level4/l4q5-6-13.png" alt="Referência fase 4" *ngIf="imageRef == 5 || imageRef == 6 || imageRef == 13">
+      <img src="assets/level4/l4q7-14.png" alt="Referência fase 4" *ngIf="imageRef == 7 || imageRef == 14">
+      <img src="assets/level4/l4q8.png" alt="Referência fase 4" *ngIf="imageRef == 8">
+      <img src="assets/level4/l4q9-15.png" alt="Referência fase 4" *ngIf="imageRef == 9 || imageRef == 15">
+      <img src="assets/level4/l4q11.png" alt="Referência fase 4" *ngIf="imageRef == 11">
+      <img src="assets/level4/l4q12.png" alt="Referência fase 4" *ngIf="imageRef == 12">
+      <img src="assets/level4/l4q16.png" alt="Referência fase 4" *ngIf="imageRef == 16">
+
+      <p class="w-75" [innerHTML]="question"></p>
+      <div class="row justify-content-center w-100 mt-3" [formGroup]="answer">
+        <input type="text" class="answer-input col-md-5 col-sm-3 mb-4 d-block" id="answer" #answerValue formControlName="text" maxlength="30" placeholder="Digite aqui">
+        <div class="w-100"></div>
+        <button type="button" class="btn btn-primary col-md-5 col-sm-3 btn-block" [ngClass]="[btnClass1]" (click)="changeAnswers(answerValue.value)">Enviar</button>
+      </div>
+    </div>
+  </div>
+  <app-toast aria-live="polite" aria-atomic="true" ></app-toast>
+</body>
+</html>
