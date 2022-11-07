@@ -1,3 +1,4 @@
+import { ScreenOneLevelFourComponent } from './components/levels/four/screen-one-level-four/screen-one-level-four.component';
 import { ScreenFourLevelThreeComponent } from './components/levels/three/screen-four-level-three/screen-four-level-three.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -29,7 +30,8 @@ const routes: Routes = [
   {path: 'fase-3-1', component: ScreenOneLevelThreeComponent},
   {path: 'fase-3-2', component: ScreenTwoLevelThreeComponent},
   {path: 'fase-3-3', component: ScreenThreeLevelThreeComponent},
-  {path: 'fase-3-4', component: ScreenFourLevelThreeComponent}
+  {path: 'fase-3-4', component: ScreenFourLevelThreeComponent},
+  {path: 'fase-4-1', component: ScreenOneLevelFourComponent}
 ];
 
 @NgModule({
