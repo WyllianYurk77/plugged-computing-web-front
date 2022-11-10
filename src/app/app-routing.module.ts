@@ -5,6 +5,7 @@ import { LevelSelectionComponent } from './components/level-selection/level-sele
 import { ScreenEightLevelEightComponent } from './components/levels/eight/screen-eight-level-eight/screen-eight-level-eight.component';
 import { ScreenFiveLevelEightComponent } from './components/levels/eight/screen-five-level-eight/screen-five-level-eight.component';
 import { ScreenFourLevelEightComponent } from './components/levels/eight/screen-four-level-eight/screen-four-level-eight.component';
+import { ScreenNineLevelEightComponent } from './components/levels/eight/screen-nine-level-eight/screen-nine-level-eight.component';
 import { ScreenOneLevelEightComponent } from './components/levels/eight/screen-one-level-eight/screen-one-level-eight.component';
 import { ScreenSevenLevelEightComponent } from './components/levels/eight/screen-seven-level-eight/screen-seven-level-eight.component';
 import { ScreenSixLevelEightComponent } from './components/levels/eight/screen-six-level-eight/screen-six-level-eight.component';
@@ -75,7 +76,8 @@ const routes: Routes = [
   {path: 'fase-8-5', component: ScreenFiveLevelEightComponent},
   {path: 'fase-8-6', component: ScreenSixLevelEightComponent},
   {path: 'fase-8-7', component: ScreenSevenLevelEightComponent},
-  {path: 'fase-8-8', component: ScreenEightLevelEightComponent}
+  {path: 'fase-8-8', component: ScreenEightLevelEightComponent},
+  {path: 'fase-8-9', component: ScreenNineLevelEightComponent}
 ];
 
 @NgModule({
