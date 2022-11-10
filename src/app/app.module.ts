@@ -40,6 +40,7 @@ import { ScreenOneLevelEightComponent } from './components/levels/eight/screen-o
 import { ScreenTwoLevelEightComponent } from './components/levels/eight/screen-two-level-eight/screen-two-level-eight.component';
 import { ScreenThreeLevelEightComponent } from './components/levels/eight/screen-three-level-eight/screen-three-level-eight.component';
 import { ScreenFourLevelEightComponent } from './components/levels/eight/screen-four-level-eight/screen-four-level-eight.component';
+import { ScreenFiveLevelEightComponent } from './components/levels/eight/screen-five-level-eight/screen-five-level-eight.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { ScreenFourLevelEightComponent } from './components/levels/eight/screen-
     ScreenOneLevelEightComponent,
     ScreenTwoLevelEightComponent,
     ScreenThreeLevelEightComponent,
-    ScreenFourLevelEightComponent
+    ScreenFourLevelEightComponent,
+    ScreenFiveLevelEightComponent
   ],
   imports: [
     BrowserModule,
