@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { LevelSelectionComponent } from './components/level-selection/level-selection.component';
+import { ScreenEightLevelEightComponent } from './components/levels/eight/screen-eight-level-eight/screen-eight-level-eight.component';
 import { ScreenFiveLevelEightComponent } from './components/levels/eight/screen-five-level-eight/screen-five-level-eight.component';
 import { ScreenFourLevelEightComponent } from './components/levels/eight/screen-four-level-eight/screen-four-level-eight.component';
 import { ScreenOneLevelEightComponent } from './components/levels/eight/screen-one-level-eight/screen-one-level-eight.component';
@@ -73,7 +74,8 @@ const routes: Routes = [
   {path: 'fase-8-4', component: ScreenFourLevelEightComponent},
   {path: 'fase-8-5', component: ScreenFiveLevelEightComponent},
   {path: 'fase-8-6', component: ScreenSixLevelEightComponent},
-  {path: 'fase-8-7', component: ScreenSevenLevelEightComponent}
+  {path: 'fase-8-7', component: ScreenSevenLevelEightComponent},
+  {path: 'fase-8-8', component: ScreenEightLevelEightComponent}
 ];
 
 @NgModule({
