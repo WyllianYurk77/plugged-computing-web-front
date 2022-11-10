@@ -57,7 +57,7 @@ export class ScreenThreeLevelFiveComponent implements OnInit {
         },1000);
     } else {
       this.buttonClass(false);
-      this.toastService.show('Este campo não pode ficar em branco.');
+      this.toastService.show(this.imageRef === 1 ? 'Este campo não pode ficar em branco.' : 'Tente outra vez.');
       this.attempts += 1;
       console.log(this.attempts);
       console.log(value);
