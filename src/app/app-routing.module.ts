@@ -14,6 +14,7 @@ import { ScreenFourLevelOneComponent } from './components/levels/one/screen-four
 import { ScreenOneLevelOneComponent } from './components/levels/one/screen-one-level-one/screen-one-level-one.component';
 import { ScreenThreeLevelOneComponent } from './components/levels/one/screen-three-level-one/screen-three-level-one.component';
 import { ScreenTwoLevelOneComponent } from './components/levels/one/screen-two-level-one/screen-two-level-one.component';
+import { ScreenFourLevelSixComponent } from './components/levels/six/screen-four-level-six/screen-four-level-six.component';
 import { ScreenOneLevelSixComponent } from './components/levels/six/screen-one-level-six/screen-one-level-six.component';
 import { ScreenThreeLevelSixComponent } from './components/levels/six/screen-three-level-six/screen-three-level-six.component';
 import { ScreenTwoLevelSixComponent } from './components/levels/six/screen-two-level-six/screen-two-level-six.component';
@@ -51,7 +52,8 @@ const routes: Routes = [
   {path: 'fase-5-4', component: ScreenFourLevelFiveComponent},
   {path: 'fase-6-1', component: ScreenOneLevelSixComponent},
   {path: 'fase-6-2', component: ScreenTwoLevelSixComponent},
-  {path: 'fase-6-3', component: ScreenThreeLevelSixComponent}
+  {path: 'fase-6-3', component: ScreenThreeLevelSixComponent},
+  {path: 'fase-6-4', component: ScreenFourLevelSixComponent}
 ];
 
 @NgModule({
