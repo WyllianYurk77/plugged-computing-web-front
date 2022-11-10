@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fase 7</title>
+</head>
+<body>
+  <div class="container">
+    <div><a routerLink="/fase-7-1"><i class="bi bi-chevron-left"></i></a></div>
+    <div class="content">
+      <h3><strong>FASE 7</strong></h3>
+
+      <img src="assets/level7/l7q1.png" alt="Referência fase 7" *ngIf="imageRef == 1">
+      <img src="assets/level7/l7q2.png" alt="Referência fase 7" *ngIf="imageRef == 2">
+      <img src="assets/level7/l7q3.png" alt="Referência fase 7" *ngIf="imageRef == 3">
+
+      <p class="w-75" [innerHTML]="question"></p>
+      <div class="answer-table row justify-content-center w-100">
+        <button type="button" class="btn btn-primary col-md-5 col-sm-3 btn-block" [ngClass]="[btnClass1]" (click)="changeAnswers(answers[0], 1)" (click)="pickAnswer(answers[0])">{{answers[0]}}</button>
+        <div class="w-100"></div>
+        <button type="button" class="btn btn-primary col-md-5 col-sm-3 btn-block" [ngClass]="[btnClass2]" (click)="changeAnswers(answers[1], 2)" (click)="pickAnswer(answers[1])">{{answers[1]}}</button>
+        <div class="w-100"></div>
+        <button type="button" class="btn btn-primary col-md-5 col-sm-3 btn-block" [ngClass]="[btnClass3]" (click)="changeAnswers(answers[2], 3)" (click)="pickAnswer(answers[2])">{{answers[2]}}</button>
+        <div class="w-100"></div>
+        <button type="button" class="btn btn-primary col-md-5 col-sm-3 btn-block" [ngClass]="[btnClass4]" (click)="changeAnswers(answers[3], 4)" (click)="pickAnswer(answers[3])">{{answers[3]}}</button>
+      </div>
+    </div>
+  </div>
+  <app-toast aria-live="polite" aria-atomic="true" ></app-toast>
+</body>
+</html>
