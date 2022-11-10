@@ -36,6 +36,15 @@ import { ScreenFourLevelSixComponent } from './components/levels/six/screen-four
 import { ScreenOneLevelSevenComponent } from './components/levels/seven/screen-one-level-seven/screen-one-level-seven.component';
 import { ScreenTwoLevelSevenComponent } from './components/levels/seven/screen-two-level-seven/screen-two-level-seven.component';
 import { ScreenThreeLevelSevenComponent } from './components/levels/seven/screen-three-level-seven/screen-three-level-seven.component';
+import { ScreenOneLevelEightComponent } from './components/levels/eight/screen-one-level-eight/screen-one-level-eight.component';
+import { ScreenTwoLevelEightComponent } from './components/levels/eight/screen-two-level-eight/screen-two-level-eight.component';
+import { ScreenThreeLevelEightComponent } from './components/levels/eight/screen-three-level-eight/screen-three-level-eight.component';
+import { ScreenFourLevelEightComponent } from './components/levels/eight/screen-four-level-eight/screen-four-level-eight.component';
+import { ScreenFiveLevelEightComponent } from './components/levels/eight/screen-five-level-eight/screen-five-level-eight.component';
+import { ScreenSixLevelEightComponent } from './components/levels/eight/screen-six-level-eight/screen-six-level-eight.component';
+import { ScreenSevenLevelEightComponent } from './components/levels/eight/screen-seven-level-eight/screen-seven-level-eight.component';
+import { ScreenEightLevelEightComponent } from './components/levels/eight/screen-eight-level-eight/screen-eight-level-eight.component';
+import { ScreenNineLevelEightComponent } from './components/levels/eight/screen-nine-level-eight/screen-nine-level-eight.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +78,16 @@ import { ScreenThreeLevelSevenComponent } from './components/levels/seven/screen
     ScreenFourLevelSixComponent,
     ScreenOneLevelSevenComponent,
     ScreenTwoLevelSevenComponent,
-    ScreenThreeLevelSevenComponent
+    ScreenThreeLevelSevenComponent,
+    ScreenOneLevelEightComponent,
+    ScreenTwoLevelEightComponent,
+    ScreenThreeLevelEightComponent,
+    ScreenFourLevelEightComponent,
+    ScreenFiveLevelEightComponent,
+    ScreenSixLevelEightComponent,
+    ScreenSevenLevelEightComponent,
+    ScreenEightLevelEightComponent,
+    ScreenNineLevelEightComponent
   ],
   imports: [
     BrowserModule,
