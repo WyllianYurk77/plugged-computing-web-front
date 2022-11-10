@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { LevelSelectionComponent } from './components/level-selection/level-selection.component';
 import { ScreenOneLevelEightComponent } from './components/levels/eight/screen-one-level-eight/screen-one-level-eight.component';
+import { ScreenThreeLevelEightComponent } from './components/levels/eight/screen-three-level-eight/screen-three-level-eight.component';
+import { ScreenTwoLevelEightComponent } from './components/levels/eight/screen-two-level-eight/screen-two-level-eight.component';
 import { ScreenFourLevelFiveComponent } from './components/levels/five/screen-four-level-five/screen-four-level-five.component';
 import { ScreenOneLevelFiveComponent } from './components/levels/five/screen-one-level-five/screen-one-level-five.component';
 import { ScreenThreeLevelFiveComponent } from './components/levels/five/screen-three-level-five/screen-three-level-five.component';
@@ -61,7 +63,9 @@ const routes: Routes = [
   {path: 'fase-7-1', component: ScreenOneLevelSevenComponent},
   {path: 'fase-7-2', component: ScreenTwoLevelSevenComponent},
   {path: 'fase-7-3', component: ScreenThreeLevelSevenComponent},
-  {path: 'fase-8-1', component: ScreenOneLevelEightComponent}
+  {path: 'fase-8-1', component: ScreenOneLevelEightComponent},
+  {path: 'fase-8-2', component: ScreenTwoLevelEightComponent},
+  {path: 'fase-8-3', component: ScreenThreeLevelEightComponent}
 ];
 
 @NgModule({
